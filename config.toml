@@ -1,0 +1,8 @@
+[module]
+  [[module.imports]]
+    path = "github.com/FabioSol/Lykeion"
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+    lineNumbersInTable = true
