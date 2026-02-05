@@ -1,9 +1,9 @@
 ---
-title: "KL Divergence Between Two Bernoulli Distributions"
+title: "KL Divergence Between Two Poisson Distributions"
 date: 2026-01-20T18:28:37-06:00
 draft: false
 type: "document"
-description: "Derivation of the Kullback-Leibler divergence between two Bernoulli distributions"
+description: "Derivation of the Kullback-Leibler divergence between two Poisson distributions"
 showDescription: false
 weight: 4
 ---
