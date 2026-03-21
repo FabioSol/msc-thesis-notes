@@ -69,7 +69,7 @@ Substituting the expressions derived above:
 
 $$
 \begin{aligned}
-\ln \left( p(x) \right)-\ln \left( q(x) \right) &= \left(-\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) -\frac{k}{2}\ln \left( 2\pi\right) -\frac{1}{2}\ln \left(|\Sigma_0| \right)\right) \\\\
+\ln \left( p(x) \right)-\ln \left( q(x) \right) &= \left(-\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) -\frac{k}{2}\ln \left( 2\pi\right) -\frac{1}{2}\ln \left(|\Sigma_0| \right)\right) \\
 &- \left(-\frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) -\frac{k}{2}\ln \left( 2\pi\right) -\frac{1}{2}\ln \left(|\Sigma_1| \right)\right)
 \end{aligned}
 $$
@@ -78,7 +78,7 @@ Distributing the negative sign:
 
 $$
 \begin{aligned}
-\ln \left( p(x) \right)-\ln \left( q(x) \right) &= \left(-\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) -\frac{k}{2}\ln \left( 2\pi\right) -\frac{1}{2}\ln \left(|\Sigma_0| \right)\right) \\\\
+\ln \left( p(x) \right)-\ln \left( q(x) \right) &= \left(-\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) -\frac{k}{2}\ln \left( 2\pi\right) -\frac{1}{2}\ln \left(|\Sigma_0| \right)\right) \\
 &+ \left(\frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) +\frac{k}{2}\ln \left( 2\pi\right) +\frac{1}{2}\ln \left(|\Sigma_1| \right)\right)
 \end{aligned}
 $$
@@ -87,8 +87,8 @@ Observing that the $\frac{k}{2}\ln(2\pi)$ terms cancel, we obtain:
 
 $$
 \begin{aligned}
-\ln \left( p(x) \right)-\ln \left( q(x) \right) = &-\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \\\\
-&+\frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \\\\
+\ln \left( p(x) \right)-\ln \left( q(x) \right) = &-\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \\
+&+\frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \\
 &+\frac{1}{2}\ln \left(\frac{|\Sigma_1|}{|\Sigma_0|} \right)
 \end{aligned}
 $$
@@ -99,8 +99,8 @@ Substituting this expression into the definition of the KL divergence:
 
 $$
 \begin{aligned}
-D_{KL}(P || Q) = \int_{x \in \mathcal{X}} p(x)\left( -\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \\\\
-+\frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \\\\
+D_{KL}(P || Q) = \int_{x \in \mathcal{X}} p(x)\left( -\frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \\
++\frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \\
 +\frac{1}{2}\ln \left(\frac{|\Sigma_1|}{|\Sigma_0|} \right)\right) dx
 \end{aligned}
 $$
@@ -110,8 +110,8 @@ Distributing $p(x)$ inside:
 $$
 \begin{aligned}
 D_{KL}(P || Q) = \int_{x \in \mathcal{X}}
-&\quad - p(x) \frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \\\\
-&\quad + p(x) \frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \\\\
+&\quad - p(x) \frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \\
+&\quad + p(x) \frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \\
 &\quad + p(x) \frac{1}{2}\ln \left(\frac{|\Sigma_1|}{|\Sigma_0|} \right) dx
 \end{aligned}
 $$
@@ -123,16 +123,16 @@ By linearity of integration, we decompose this into three integrals:
 $$
 \begin{aligned}
 D_{KL}(P || Q) =
-&\quad - \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) dx \\\\
-&\quad + \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) dx \\\\
+&\quad - \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) dx \\
+&\quad + \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) dx \\
 &\quad + \int_{x \in \mathcal{X}} p(x) \frac{1}{2}\ln \left(\frac{|\Sigma_1|}{|\Sigma_0|} \right) dx
 \end{aligned}
 $$
 
 We define:
 \begin{align*}
-I_1 &= \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \, dx \\\\
-I_2 &= \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \, dx \\\\
+I_1 &= \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_0)^T \Sigma_0^{-1} (x - \mu_0) \, dx \\
+I_2 &= \int_{x \in \mathcal{X}} p(x) \frac{1}{2} (x - \mu_1)^T \Sigma_1^{-1} (x - \mu_1) \, dx \\
 I_3 &= \int_{x \in \mathcal{X}} p(x) \frac{1}{2}\ln \left(\frac{|\Sigma_1|}{|\Sigma_0|} \right) \, dx
 \end{align*}
 
@@ -189,23 +189,23 @@ $$I_2 = \int_{x \in \mathbb{R}^k} \frac{1}{2} ((x - \mu_0) + (\mu_0 - \mu_1))^T 
 
 Expanding the quadratic form using the algebraic identity $(a+b)^T C (a+b) = a^T C a + a^T C b + b^T C a + b^T C b$ and noting that $a^T C b = b^T C a$ for symmetric matrices:
 
-$$I_2 = \int_{x \in \mathbb{R}^k} p(x)  \frac{1}{2} \left( (x - \mu_0)^T \Sigma_1^{-1} (x - \mu_0) \\\\
-+2(\mu_0 - \mu_1)^T \Sigma_1^{-1} (x - \mu_0) \\\\
+$$I_2 = \int_{x \in \mathbb{R}^k} p(x)  \frac{1}{2} \left( (x - \mu_0)^T \Sigma_1^{-1} (x - \mu_0) \\
++2(\mu_0 - \mu_1)^T \Sigma_1^{-1} (x - \mu_0) \\
 +(\mu_0 - \mu_1)^T \Sigma_1^{-1} (\mu_0 - \mu_1) \right)  dx$$
 
 Using linearity of integration, we split this into three sub-integrals:
 $$
 \begin{aligned}
-I_2 = \int_{x \in \mathbb{R}^k} p(x) \frac{1}{2}  (x - \mu_0)^T \Sigma_1^{-1} (x - \mu_0) dx \\\\
-+\int_{x \in \mathbb{R}^k} p(x) \frac{1}{2} \cdot 2(\mu_0 - \mu_1)^T \Sigma_1^{-1} (x - \mu_0) dx \\\\
+I_2 = \int_{x \in \mathbb{R}^k} p(x) \frac{1}{2}  (x - \mu_0)^T \Sigma_1^{-1} (x - \mu_0) dx \\
++\int_{x \in \mathbb{R}^k} p(x) \frac{1}{2} \cdot 2(\mu_0 - \mu_1)^T \Sigma_1^{-1} (x - \mu_0) dx \\
 +\int_{x \in \mathbb{R}^k} p(x) \frac{1}{2} (\mu_0 - \mu_1)^T \Sigma_1^{-1} (\mu_0 - \mu_1)  dx
 \end{aligned}
 $$
 
 We define:
 \begin{align*}
-I_{2.1} &= \int_{x \in \mathbb{R}^k} p(x) \frac{1}{2}  (x - \mu_0)^T \Sigma_1^{-1} (x - \mu_0) \, dx \\\\
-I_{2.2} &= \int_{x \in \mathbb{R}^k} p(x) \frac{1}{2} \cdot 2(\mu_0 - \mu_1)^T \Sigma_1^{-1} (x - \mu_0) \, dx \\\\
+I_{2.1} &= \int_{x \in \mathbb{R}^k} p(x) \frac{1}{2}  (x - \mu_0)^T \Sigma_1^{-1} (x - \mu_0) \, dx \\
+I_{2.2} &= \int_{x \in \mathbb{R}^k} p(x) \frac{1}{2} \cdot 2(\mu_0 - \mu_1)^T \Sigma_1^{-1} (x - \mu_0) \, dx \\
 I_{2.3} &= \int_{x \in \mathbb{R}^k} p(x) \frac{1}{2} (\mu_0 - \mu_1)^T \Sigma_1^{-1} (\mu_0 - \mu_1) \, dx
 \end{align*}
 
