@@ -6,3 +6,7 @@ github.com/FabioSol/Lykeion v0.0.0-20260204004918-056ec1d711cf h1:FbXgftks5r8F3i
 github.com/FabioSol/Lykeion v0.0.0-20260204004918-056ec1d711cf/go.mod h1:s6o1TmZq/tSx+jd7CbMXI0uor00kX5meM1QepVPryOA=
 github.com/FabioSol/Lykeion v0.0.0-20260321184923-862c300f2705 h1:xy3jEeUXl/yFLSvj2W2sIAH2Mw0J0LmYnCcI5FZUIJQ=
 github.com/FabioSol/Lykeion v0.0.0-20260321184923-862c300f2705/go.mod h1:s6o1TmZq/tSx+jd7CbMXI0uor00kX5meM1QepVPryOA=
+github.com/FabioSol/Lykeion v0.0.0-20260322171320-7958b75ba159 h1:Ft+Ec++JUVAtE3J+Lnl/jA0qw352J/Gmy8dzAqw7EJM=
+github.com/FabioSol/Lykeion v0.0.0-20260322171320-7958b75ba159/go.mod h1:s6o1TmZq/tSx+jd7CbMXI0uor00kX5meM1QepVPryOA=
+github.com/FabioSol/Lykeion v0.0.0-20260322173620-0bbfa63d894c h1:A5AsEGnmALUk1FQ762Nj/8Njo5PdKGF+tPbM5jOEroc=
+github.com/FabioSol/Lykeion v0.0.0-20260322173620-0bbfa63d894c/go.mod h1:s6o1TmZq/tSx+jd7CbMXI0uor00kX5meM1QepVPryOA=
